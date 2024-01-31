@@ -8,14 +8,50 @@ public class Plane : MonoBehaviour
     public float newPointThreshold = 0.2f;
     Vector2 lastPosition;
     LineRenderer lineRenderer;
-
+    Vector2 currentPosition;
+    Rigidbody2D rigidbody;
+    public float speed = 1;
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 1;
         lineRenderer.SetPosition(0, transform.position);
+
+        rigidbody = GetComponent<Rigidbody2D>();
     }
-     void OnMouseDown()
+    void FixedUpdate()
+    {
+        currentPosition = transform.position;
+        if (points.Count>0)
+            //rotation to point
+        {
+            Vector2 direction = points[0] - currentPosition;
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            rigidbody.rotation = -angle; 
+        }
+        //move positions
+        //transform is for 3d so saying vector 2 will make it ignore z axis
+            rigidbody.MovePosition(rigidbody.position + (Vector2)transform.up*speed* Time.deltaTime);
+    }
+
+    void Update()
+    {
+        lineRenderer.SetPosition(0, transform.position);
+        if(points.Count>0)
+        {
+            if(Vector2.Distance(currentPosition, points[0])< newPointThreshold)
+            {
+                points.RemoveAt(0);
+                //arrays dont have a remove action only lists do 
+                for (int i = 0; i < lineRenderer.positionCount - 2; i++){
+                    lineRenderer.SetPosition(i, lineRenderer.GetPosition(i +1));
+                }
+                lineRenderer.positionCount--;
+            }
+
+        }
+    }
+    void OnMouseDown()
     {
         points = new List<Vector2>();
         Vector2 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
