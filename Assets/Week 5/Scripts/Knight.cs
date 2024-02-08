@@ -42,7 +42,11 @@ public class Knight : MonoBehaviour
         {
             destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
-        animator.SetFloat("Movement", movement.magnitude); 
+        animator.SetFloat("Movement", movement.magnitude);
+        if (Input.GetMouseButtonDown(1))
+            {
+            animator.SetTrigger("Attack");
+        }
     }
     private void OnMouseDown()
     {
@@ -71,4 +75,5 @@ public class Knight : MonoBehaviour
             animator.SetTrigger("TakeDamage");   //use set trigger or setfloat or setbool for the conditions/parameters and quote it 
         }
     }
+  
 }
