@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.EventSystems; //makes eventsystem in unity accessible 
 public class Knight : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -38,7 +38,7 @@ public class Knight : MonoBehaviour
     void Update()
     {
         if (isDead) return;
-        if (Input.GetMouseButtonDown(0) && !clickingOnSelf)
+        if (Input.GetMouseButtonDown(0) && !clickingOnSelf && !EventSystem.current.IsPointerOverGameObject()) //will make player not move when pressing uI
         {
             destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
