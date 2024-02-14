@@ -8,11 +8,19 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void LoadNextscene()
+    public void Update() //put it in update for it to 
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = (currentSceneIndex + 1)% SceneManager.sceneCountInBuildSettings; //makes scene not go greater than adding one in the build settings 
-        SceneManager.LoadScene(nextSceneIndex); // % modular leaves remainder 
-}
+        if (Input.GetKeyDown("s"))
+        {
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings; //makes scene not go greater than adding one in the build settings 
 
+            SceneManager.LoadScene(2); // % modular leaves remainder 
+            if (currentSceneIndex == 2)
+            {
+                SceneManager.LoadScene(1);
+            }
+
+        }
+    }
 }
