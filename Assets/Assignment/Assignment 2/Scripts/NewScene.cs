@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class NewScene : MonoBehaviour
 {
-    public float healthbarStatus;
+    public float health;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,24 +17,28 @@ public class NewScene : MonoBehaviour
     // Update is called once per frame
     public void newScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings;
-        SceneManager.LoadScene(5); // % modular leaves remainder 
+        //loads difficulty screen after players click wanna play
+       int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+       SceneManager.LoadScene(5); // % modular leaves remainder 
       
 
     }
     public void HardScene()
     {
+        //will transition from difficulty scene to play scene if players click hard mode 
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings;
         SceneManager.LoadScene(6); // % modular leaves remainder 
-        healthbarStatus = 1; 
+        health = 1;
+        //will remember difficulty setting when clicking on buttons to next scene. 
+        PlayerPrefs.SetFloat("difficultySetting", health);
     }
     public void EasyScene()
     {
+        //will transition from difficulty scene to play scene if players click easy mode 
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings;
         SceneManager.LoadScene(6); // % modular leaves remainder 
-        healthbarStatus = 5;
+        health = 5;
+        //will remember difficulty setting when clicking on buttons to next scene. 
+        PlayerPrefs.SetFloat("difficultySetting", health);
     }
 }

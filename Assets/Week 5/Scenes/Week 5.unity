@@ -2046,7 +2046,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   health: 0
-  Currenthealth: 0
   maxHealth: 5
 --- !u!95 &8571497146446071162
 Animator:
@@ -2082,6 +2081,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1903173161}
+  health: 0
+  maxHealth: 5
 --- !u!4 &8827454028874828270
 Transform:
   m_ObjectHideFlags: 0
