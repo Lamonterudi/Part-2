@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Week 6/Scenes/Scene B.unity
     guid: 6d88f6549c145f0468959f422829c76b
+  - enabled: 1
+    path: Assets/Assignment/Assignment 2/Scenes/Main Menu.unity
+    guid: c4110f2ac7896bb44a1c29383dd42159
+  - enabled: 1
+    path: Assets/Assignment/Assignment 2/Scenes/Difficulty.unity
+    guid: 55e89178b0410204db24a182bd2de1f3
+  - enabled: 1
+    path: Assets/Assignment/Assignment 2/Scenes/PlayScreen.unity
+    guid: ba43db9a211d40846a3cca51a5f35866
   m_configObjects: {}
