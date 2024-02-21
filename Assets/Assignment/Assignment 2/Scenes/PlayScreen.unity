@@ -214,7 +214,7 @@ Transform:
   m_GameObject: {fileID: 43428917}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.15625, y: -0.3475, z: 0}
+  m_LocalPosition: {x: 0.88, y: -0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -252,7 +252,6 @@ MonoBehaviour:
   speed: 5
   daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
   spawnPoint: {fileID: 68436838}
-  weaponDirection: 1
 --- !u!4 &68436838
 Transform:
   m_ObjectHideFlags: 0
@@ -262,7 +261,7 @@ Transform:
   m_GameObject: {fileID: 68436836}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.869999, y: -0.39999986, z: 0}
+  m_LocalPosition: {x: 22.9, y: 6.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -359,7 +358,7 @@ Transform:
   m_GameObject: {fileID: 76679446}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.23250002, y: 0.3025, z: 0}
+  m_LocalPosition: {x: -1.34, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -456,13 +455,13 @@ Transform:
   m_GameObject: {fileID: 103146851}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.42875, y: 0.47625, z: 0}
+  m_LocalPosition: {x: -3.6, y: 1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4753158603321070936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &183337843
+--- !u!1 &160936842
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,46 +469,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 183337844}
-  - component: {fileID: 183337845}
+  - component: {fileID: 160936843}
+  - component: {fileID: 160936844}
   m_Layer: 0
-  m_Name: Spawn point for daggers right2 (7)
+  m_Name: KeySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &183337844
+--- !u!4 &160936843
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183337843}
+  m_GameObject: {fileID: 160936842}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.82, y: -3.32, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.14, y: -3.91, z: 0.011335003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 434443242}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &183337845
+--- !u!114 &160936844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183337843}
+  m_GameObject: {fileID: 160936842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
+  m_Script: {fileID: 11500000, guid: 964db77ce9419f846b92bf1c2b7d790d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
-  spawnPoint: {fileID: 183337844}
-  weaponDirection: 1
+  KeyPrefab: {fileID: 7314220580983480114, guid: e8afd59cf597aa34f803128fa5de1162, type: 3}
 --- !u!1 &200412971
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +538,6 @@ MonoBehaviour:
   speed: 5
   daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
   spawnPoint: {fileID: 200412973}
-  weaponDirection: 1
 --- !u!4 &200412973
 Transform:
   m_ObjectHideFlags: 0
@@ -552,7 +547,7 @@ Transform:
   m_GameObject: {fileID: 200412971}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.1, y: -7.77, z: 0}
+  m_LocalPosition: {x: 23.7, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -582,70 +577,19 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434443241}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.71, y: 3.83, z: 8.995477}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18000007, y: -0.35, z: 8.995477}
+  m_LocalScale: {x: 0.375, y: 0.375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2012987810}
+  - {fileID: 1042901806}
   - {fileID: 1338407039}
   - {fileID: 200412973}
   - {fileID: 1023392455}
-  - {fileID: 450287002}
-  - {fileID: 785367345}
   - {fileID: 2091042802}
+  - {fileID: 1776647699}
   - {fileID: 68436838}
-  - {fileID: 1112578624}
-  - {fileID: 183337844}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &450287000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 450287002}
-  - component: {fileID: 450287001}
-  m_Layer: 0
-  m_Name: Spawn point for daggers right2 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &450287001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450287000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
-  spawnPoint: {fileID: 450287002}
-  weaponDirection: 1
---- !u!4 &450287002
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450287000}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.810001, y: -5.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 434443242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670209313
 GameObject:
@@ -715,54 +659,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &785367343
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 785367345}
-  - component: {fileID: 785367344}
-  m_Layer: 0
-  m_Name: Spawn point for daggers right2 (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &785367344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785367343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
-  spawnPoint: {fileID: 785367345}
-  weaponDirection: 1
---- !u!4 &785367345
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785367343}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.17158517, y: -0, z: -0, w: 0.98516935}
-  m_LocalPosition: {x: 13.07, y: -7.6499996, z: -11.725477}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 434443242}
-  m_LocalEulerAnglesHint: {x: 19.76, y: 0, z: 0}
 --- !u!1 &937147115
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +885,6 @@ MonoBehaviour:
   speed: 5
   daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
   spawnPoint: {fileID: 1023392455}
-  weaponDirection: 1
 --- !u!4 &1023392455
 Transform:
   m_ObjectHideFlags: 0
@@ -999,13 +894,13 @@ Transform:
   m_GameObject: {fileID: 1023392453}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.1, y: -6.7799997, z: 0}
+  m_LocalPosition: {x: 22.5, y: 9.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 434443242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1112578622
+--- !u!1 &1042901805
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1013,46 +908,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1112578624}
-  - component: {fileID: 1112578623}
+  - component: {fileID: 1042901806}
+  - component: {fileID: 1042901807}
   m_Layer: 0
-  m_Name: Spawn point for daggers right2 (6)
+  m_Name: Spawn point for daggers left (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1112578623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112578622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
-  spawnPoint: {fileID: 1112578624}
-  weaponDirection: 1
---- !u!4 &1112578624
+--- !u!4 &1042901806
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112578622}
+  m_GameObject: {fileID: 1042901805}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.530001, y: -1.22, z: 0}
+  m_LocalPosition: {x: -15.1, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 434443242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1042901807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042901805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  daggerPrefab: {fileID: 5689514428646566612, guid: d42b5bb9df6a2fe4e93c5a5c2d42d7bb, type: 3}
+  spawnPoint: {fileID: 1042901806}
 --- !u!1 &1338407038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +972,7 @@ Transform:
   m_GameObject: {fileID: 1338407038}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.2, y: -2.44, z: 0}
+  m_LocalPosition: {x: 23.3, y: 3.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3721,13 +3615,13 @@ Transform:
   m_GameObject: {fileID: 1569382420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15750003, y: -0.3425, z: 0}
+  m_LocalPosition: {x: -2.95, y: -0.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4753158603321070936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2012987809
+--- !u!1 &1776647698
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3735,29 +3629,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2012987810}
+  - component: {fileID: 1776647699}
+  - component: {fileID: 1776647700}
   m_Layer: 0
-  m_Name: Spawn point for daggers left
+  m_Name: Spawn point for daggers left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2012987810
+--- !u!4 &1776647699
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012987809}
+  m_GameObject: {fileID: 1776647698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.069999695, y: -7.83, z: 0}
+  m_LocalPosition: {x: -24.5, y: -4.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 434443242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776647700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776647698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  daggerPrefab: {fileID: 5689514428646566612, guid: d42b5bb9df6a2fe4e93c5a5c2d42d7bb, type: 3}
+  spawnPoint: {fileID: 1776647699}
 --- !u!1 &2091042800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,15 +3677,30 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2091042802}
-  - component: {fileID: 2091042801}
+  - component: {fileID: 2091042803}
   m_Layer: 0
-  m_Name: Spawn point for daggers right2 (4)
+  m_Name: Spawn point for daggers left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2091042801
+--- !u!4 &2091042802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091042800}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -25.5, y: 3.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 434443242}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2091042803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3787,25 +3712,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a4f47806ea9764bb85de3474337625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  daggerPrefab: {fileID: 5689514428646566612, guid: e2c1b0fb9bfbd374fa98638c3cacea26, type: 3}
+  speed: 0
+  daggerPrefab: {fileID: 5689514428646566612, guid: d42b5bb9df6a2fe4e93c5a5c2d42d7bb, type: 3}
   spawnPoint: {fileID: 2091042802}
-  weaponDirection: 1
---- !u!4 &2091042802
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091042800}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.96, y: -4.44, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 434443242}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &524803328264879919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3954,8 +3863,8 @@ Transform:
   m_GameObject: {fileID: 2853242157440260466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.54, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalPosition: {x: 3.54, y: 0.13, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1569382423}
@@ -4167,5 +4076,6 @@ SceneRoots:
   - {fileID: 1498702245}
   - {fileID: 954044841}
   - {fileID: 670209316}
-  - {fileID: 4753158603321070936}
   - {fileID: 434443242}
+  - {fileID: 4753158603321070936}
+  - {fileID: 160936843}

@@ -13,7 +13,7 @@ public class DagSpawner : MonoBehaviour
     float timePassed = 0;
     public GameObject daggerPrefab;
     public Transform spawnPoint;
-    public float weaponDirection = 1;
+  
     // Start is called before the first frame update
     void Start()
     {

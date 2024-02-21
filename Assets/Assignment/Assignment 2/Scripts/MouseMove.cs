@@ -54,9 +54,12 @@ public class MouseMove : MonoBehaviour
 
         animator.SetFloat("Speed", PlayerMovement.sqrMagnitude);
     }
+
     public void playerDamage(float damage)
     {
+        //allows for function to decrease health value when player is hit 
         health -= damage;
+        //makes sure health doesnt go below 0
         health = Mathf.Clamp(health, 0, health);
         //this will make the player go to game over screen since health goes to 0 
         if (health == 0)

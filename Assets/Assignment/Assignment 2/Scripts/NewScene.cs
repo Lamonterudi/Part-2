@@ -9,10 +9,6 @@ public class NewScene : MonoBehaviour
 {
     public float health;
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     public void newScene()
@@ -40,5 +36,13 @@ public class NewScene : MonoBehaviour
         health = 5;
         //will remember difficulty setting when clicking on buttons to next scene. 
         PlayerPrefs.SetFloat("difficultySetting", health);
+    }
+    public void Menu()
+    {
+        //will transition from GAME ENDING scenes to MAIN MENU scene if players click easy mode 
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(4); // % modular leaves remainder 
+       
+       
     }
 }
