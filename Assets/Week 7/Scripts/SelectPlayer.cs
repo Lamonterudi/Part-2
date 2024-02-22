@@ -17,8 +17,6 @@ public class SelectPlayer : MonoBehaviour
       rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         Selected(false);
-       
-    
     }
     private void OnMouseDown()
     {
